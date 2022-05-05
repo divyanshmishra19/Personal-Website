@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Divyansh's Portfolio Website</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link
+      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img alt="" height="60" src="img/vtlogo.png" width="400" />
+      </div>
+      <button aria-label="toggle navigation" class="nav-toggle">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#home">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">About me</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#education">My Education</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#services">My Published Work</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#internship">My Internship Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#resume">My Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am
+        <strong>Divyansh Mishra</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">CS Grad Student</p>
+      <img
+        alt="a picture of Divyansh Mishra smiling"
+        class="intro__img"
+        src="img/me.jpeg"
+      />
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">A bit about me</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Grad Student working in the field of CS Education, Software Engineering,
+        and Software Testing
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          I am a thesis-track Grad Student at Virginia Tech Department of
+          Computer Science. I graduated with a bachelors in Information
+          Technology from Manipal Institute of Technology with a specialization
+          in Big Data in June, 2021. I started my MS in CS at VT in August, 2021
+          and have since worked on multiple projects in the domain of software
+          engineering, CS education, computing and social good, and information
+          and data retrieval.
+        </p>
+        <p>
+          For my theis, I'm working with
+          <a href="https://people.cs.vt.edu/~edwards/">Dr. Stephen Edwards</a>
+          on PEML, which stands for program exercise markup language, a markup
+          language designed to make writing CS programming assignment
+          descriptions easily. The project is aimed at increasing the
+          shareability and reusability of programming assignments as well as
+          make automated grading simplified. The PEML tool itself will be
+          provided as a Rails application, a Rest API, and a Ruby gem. The gem
+          is designed to parse PEML descriptions into JSON/YAML descriptions,
+          making it grading-tool neutral. This project is part of the larger
+          <a href="http://splice.cs.vt.edu/">SPLICE project</a>
+          at VT.
+        </p>
+        <p>And yes, that is my cat. Her name is Kuro and she's 2 years old.</p>
+      </div>
+
+      <img
+        alt="Jane leaning against a bus"
+        class="about-me__img"
+        src="img/cat.jpeg"
+      />
+    </section>
+
+    <!-- My Education -->
+    <section class="my-education" id="education">
+      <h2 class="section__title section__title--services">My Education</h2>
+      <div class="services">
+        <div class="service">
+          <h3 class="list-header">Virginia Tech</h3>
+          <ul class="entry-list">
+            <li>Duration - Aug, 21 - May, 23</li>
+            <li>Program: MS CS</li>
+            <li>GPA: 4.0</li>
+          </ul>
+        </div>
+        <!-- / papers -->
+
+        <div class="service">
+          <h3 class="list-header">Manipal Institute of Technology</h3>
+          <ul class="entry-list">
+            <li>Duration - Jul, 17 - Jun, 21</li>
+            <li>Program: BTech. IT</li>
+            <li>GPA: 8.9</li>
+          </ul>
+        </div>
+        <!-- / papers -->
+
+        <div class="service">
+          <h3 class="list-header">City Montessori School</h3>
+          <ul class="entry-list">
+            <li>Duration - May, 13 - May, 17</li>
+            <li>Program: ICSE/ISC</li>
+            <li>GPA: 95%</li>
+          </ul>
+        </div>
+        <!-- / papers -->
+      </div>
+      <!-- / papers -->
+    </section>
+
+    <!-- My Projects -->
+    <section class="about-me" id="internship">
+      <h2 class="section__title section__title--about">
+        My Internship Projects
+      </h2>
+      <p class="section__subtitle section__subtitle--about">
+        A list of my Projects that I have worked on as part of my internships.
+      </p>
+
+      <div class="about-me__body">
+        <h3 class="list-header">SWE Intern - Blackrock</h3>
+        <h4 class="list-subheader">Jan 2021 - Jul 2021</h4>
+        <ul class="entry-list">
+          <li>
+            Coordination of and Documentation for project handover from a
+            different team.
+          </li>
+          <li>
+            Maintaining and enhancing the project handed over using Java EE,
+            Spring, Hibernate, following Agile development model.
+          </li>
+          <li>
+            Integrating Okta Authentication, replacing legacy authentication
+            APIs in different web apps.
+          </li>
+        </ul>
+
+        <h3 class="list-header">Research Intern - Xu Labs @ CMU</h3>
+        <h4 class="list-subheader">Jun 2020 - Oct 2020</h4>
+        <ul class="entry-list">
+          <li>
+            Collaborating with Ph.D. scholars and PostDocs to design posters,
+            presentations and, write and edit manuscripts.
+          </li>
+          <li>
+            Designed an image processing pipeline in Python using open cv2 to
+            convert 3D sub-tomograms of viral cells to high-resolution and
+            high-contrast 2D key frames.
+          </li>
+          <li>
+            Modified a RetinaNet model by finding out more accurate scale values
+            for the tomogram dataset.
+          </li>
+        </ul>
+
+        <h3 class="list-header">Backend Development Intern - CampusHaat</h3>
+        <h4 class="list-subheader">Jul 2019 - Jun 2020</h4>
+        <ul class="entry-list">
+          <li>
+            Designed and wrote APIs for IIT-Kanpur's alumni relation platform's
+            mobile application.
+          </li>
+          <li>
+            Designed database schemas for "Sahyog", Campus Haat's platform for
+            NGOs to manage and monitor their aid programs.
+          </li>
+        </ul>
+      </div>
+      <img
+        alt="Jane leaning against a bus"
+        class="about-me__img"
+        src="img/intern.png"
+      />
+    </section>
+
+    <!-- My papers -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">My Published Work</h2>
+      <div class="services">
+        <div class="service">
+          <h3>
+            <a
+              class="color__links"
+              href="https://www.tandfonline.com/doi/full/10.1080/23311916.2021.2022568"
+              >Cogent Engineering</a
+            >
+          </h3>
+          <p>
+            Hybrid CF-SWRL recommendation system for MOOCs that provides course
+            based and module based recommendations to learners at different
+            granularities based on detected learning style following the FSLSM
+            learning style model. Recommendations validated over the course of
+            one semester with 45 participants to high accuracy.
+          </p>
+        </div>
+        <!-- / papers -->
+
+        <div class="service">
+          <h3>
+            <a
+              class="color__links"
+              href="https://link.springer.com/article/10.1007/s13748-021-00271-1"
+              >Progress in Artificial Intelligence</a
+            >
+          </h3>
+          <p>
+            A Rasa-powered chat-bot that can convert natural language in english
+            to SPARQL to query large-scale data-rich knowledge-bases. Utilizes
+            dual intent detection and entity picking to classify intent based
+            queries which are then converted into valid SPARQL queries.
+            Validated with over 2000 randomly generated queries against MIT
+            Hostels konwledge-base.
+          </p>
+        </div>
+        <!-- / papers -->
+
+        <div class="service">
+          <h3>
+            <a
+              class="color__links"
+              href="https://online-journals.org/index.php/i-jet/article/view/21789"
+              >iJET</a
+            >
+          </h3>
+          <p>
+            Chrome extension that uses learner ontology together with MOOC
+            ontology to automatically and dynamically detect a learner's
+            learning style based on the Felder-Silverman Learning Style Model.
+            Tested for two semesters with 40 participants using Coursera and
+            validated against paper based FSLSM quiz answers.
+          </p>
+        </div>
+        <!-- / papers -->
+      </div>
+      <!-- / papers -->
+    </section>
+
+    <!-- My Resume -->
+    <section class="about-me" id="resume">
+      <h2 class="section__title section__title--about">My Resume</h2>
+      <p class="section__subtitle section__subtitle--about">
+        A bit about my resume.
+      </p>
+
+      <div class="about-me__body">
+        I try to update my resume frequently, however, I haven't added some of
+        my more recent work. Please feel free to download my resume and reach
+        out to talk more about any of the projects that interest you. You can
+        download my resume as a PDF by clicking on this button below.
+      </div>
+      <a
+        class="btn"
+        href="https://media-exp1.licdn.com/dms/image/C4E2DAQFpdgVphXKE1g/profile-treasury-document-cover-images_480/0/1637980008043?e=1651816800&v=beta&t=8Ky4YkX24G54ssQlL4hleNf2EeNceuunKjh21J7h-Xk"
+        download="Divyansh-Resume.pdf"
+        >Click Me! Download Resume.pdf</a
+      >
+
+      <img
+        alt="Jane leaning against a bus"
+        class="about-me__img"
+        src="img/resume.png"
+      />
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- replace with your own email address -->
+      <a class="footer__link" href="mailto:divyanshmishra@vt.edu"
+        >divyanshmishra@vt.edu</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://leetcode.com/divyanshmishra19/"
+          >
+            <i class="fa fa-code"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/divyanshm-vt"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/divyanshmishra19"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
